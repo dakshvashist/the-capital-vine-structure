@@ -1,6 +1,14 @@
-html, body{
-    margin: 0 7%;
+html{
+    height: 100%;
     background-color: #ebebe8;
+    margin: 0 7%;
+    font-family: 'Lato', sans-serif;
+}
+
+html, body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
 }
 
 a{
@@ -11,10 +19,36 @@ a{
 li {
     float: left;
     padding: 1vw;
+    list-style-type: none;
+}
+
+.nav{
+    height: 15%;
 }
 
 .nav .site-title{
-    padding: 1vw;
+    padding: 1.8rem 0;
+    font-size: 150%;
+    display: block;
+    color: green;
+    background-color: white;
+}
+
+
+.heading{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    grid-gap: 5%;
+}
+
+
+.heading-left{
+    padding: 5rem 0;
+}
+
+.heading-right{
+    padding: 5rem 0;
+    text-align: center;
 }
 
 .nav, .footer{
@@ -25,7 +59,19 @@ li {
 }
 
 .footer{
-    position:fixed;
+    border-top: solid 1px;
+    background-color: #ebebe8;
+    height: 15%;
+    width: 100%;
     bottom: 0;
-    padding: 0 10%;
+    left: 0;
+    right: 0; 
+}
+
+.footer .copyright-policy{
+    padding: 1.7rem 0;
+}
+
+.recent-articles{
+    text-align: center;
 }
