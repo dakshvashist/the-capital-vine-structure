@@ -34,17 +34,16 @@ li {
 }
 
 .nav .toggle-collapse{
-    top: 0;
-    width: 90%;
     cursor: pointer;
     display: none;
 }
 
 .nav .toggle-collapse .toggle-icons{
-    top: 0;
+
     cursor: pointer;
-    display: none;
     display: flex;
+    padding: 3rem 0;
+    padding-right: 5rem;
 }
 
 
@@ -112,6 +111,15 @@ li {
 
     .nav .toggle-collapse{
         display: initial;
+    }
+
+    .heading .heading-right{
+        display: none;
+    }
+
+    .heading .heading-left{
+        text-align: center;
+        padding-left: 25%;
     }
 }
 
