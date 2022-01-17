@@ -1,3 +1,8 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
 html{
     background-color: #fafafa;
     font-family: 'Raleway', sans-serif;
@@ -86,7 +91,52 @@ li {
 
 /*Articles page grid layout styling*/
 
+.articles-page{
+    width: 90%;
+    padding: 5% 10%;
+}
 
+.article-1{
+    width: 20vw;
+    height: 45vh;
+    background-color: rgb(255, 255, 255);
+    margin: 2%;
+    border-radius: 0.5rem;
+    box-shadow: 0.3rem 0.3rem 0.5rem rgb(8, 5, 5);
+    cursor: pointer;
+    display: inline-block;
+}
+
+.article-1:hover{
+    background-color: rgba(238, 231, 231, 0.63);
+    transition: 0.5s;
+}
+
+.thumb img{
+    width: 100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.articles-page .category{
+    margin-top: 1rem;
+    margin-left: 2%;
+    color: rgb(17, 77, 27);
+    font-size: 90%;
+}
+
+.articles-page .title{
+    margin-top: 1rem;
+    margin-left: 2%;
+    color: rgb(34, 43, 92);
+}
+
+.articles-page .desc{
+    margin-top: 1rem;
+    margin-left: 2%;
+    color: rgb(99, 28, 75);
+    word-wrap:break-word;
+}
 
 /****x*** Articles page grid layout styling ****x**/
 
