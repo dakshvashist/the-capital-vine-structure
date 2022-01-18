@@ -4,7 +4,7 @@
 }
 
 html{
-    background-color: #fafafa;
+    background-color: #f3f3f3;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -23,59 +23,58 @@ li {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+
 }
 
 .nav .site-title{
-    padding: 1.8rem 5rem;
-    font-size: 100%;
-    font-weight: 700;
-    
+    padding: 2rem 5rem;
+    font-size: 1.8rem;
+    color: rgb(0, 0, 0);
+}
+
+.nav .nav-bar{
+    padding-right: 5rem;
 }
 
 .nav .nav-bar .nav-items{
     font-weight: 800;
-    padding: 1rem 0;
-    padding-right: 5rem;
+    padding-top: 2.6rem;
 }
 
 .nav .toggle-collapse{
-    cursor: pointer;
     display: none;
 }
 
 .nav .toggle-collapse .toggle-icons{
-
     cursor: pointer;
     display: flex;
-    padding: 3rem 0;
-    padding-right: 5rem;
+    padding: 2.5rem 0;
+}
+
+.heading{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-align: center;
+}
+
+.heading-left{
+    margin-top: 7.5rem;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
 }
 
 
-.heading{
-    
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
- }
-
-
-.heading-left{
-    padding: 5rem 0;
-    margin-left: 5%;
-    margin-right: 2vw;
-    max-width: 50vw;
-    min-height: min-content;
+.heading-left h4{
+    line-height: 1.7rem;
+    max-width: 37rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .heading-right{
-    padding: 5rem 0;
-    box-align: center;
-    margin-left: 2vw;
-    min-width: 40vw;
-    max-width: 50vw;
-    margin-right: 5%;
+    margin-bottom: 3rem;
 }
+
 
 .recent-articles{
     text-align: center;
@@ -93,29 +92,53 @@ li {
 
 .articles-page{
     width: 90%;
-    padding: 5% 10%;
+    max-width: 1240px;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .article-1{
-    width: 20vw;
-    height: 45vh;
+    width: 23vw;
+    height: 28vw;
     background-color: rgb(255, 255, 255);
     margin: 2%;
     border-radius: 0.5rem;
-    box-shadow: 0.3rem 0.3rem 0.5rem rgb(8, 5, 5);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     cursor: pointer;
-    display: inline-block;
+}
+
+.article-1 span{
+    margin-top: 1rem;
+    margin-left: 2%;
+    color: rgb(17, 77, 27);
+    font-size: 90%;  
+}
+
+.article-1 h3{
+    margin-top: 1rem;
+    margin-left: 2%;
+    color: rgb(34, 43, 92);
+}
+
+.article-1 p{
+    margin-top: 1rem;
+    margin-left: 2%;
+    margin-bottom: 30px;
+    word-wrap:break-word;
 }
 
 .article-1:hover{
-    background-color: rgba(238, 231, 231, 0.63);
-    transition: 0.5s;
+    background-color: #ebebe885;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    position: relative;
+    top: -1px;
+    transition: 0.3s;
 }
 
 .thumb img{
     width: 100%;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+    border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .articles-page .category{
@@ -134,6 +157,7 @@ li {
 .articles-page .desc{
     margin-top: 1rem;
     margin-left: 2%;
+    margin-bottom: 30px;
     color: rgb(99, 28, 75);
     word-wrap:break-word;
 }
@@ -161,7 +185,7 @@ li {
 
 /*----------- Media queries -----------*/
 
-@media all and (max-width:1000px){
+@media all and (max-width:850px){
     .nav .nav-items{
         display: none;
     }
@@ -170,14 +194,13 @@ li {
         display: initial;
     }
 
-    .heading .heading-right{
-        display: none;
-    }
 
-    .heading .heading-left{
-        text-align: center;
-        margin-left: 25vw;
+
+@media screen and (max-width:900px) {
+    .articles-page{
+        grid-template-columns: 1fr 1fr;
     }
 }
+
 
 /*-----x------ Media queries -------x----*/
