@@ -23,13 +23,23 @@ li {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    font-size: 1.1rem;
 
 }
 
 .nav .site-title{
     padding: 2rem 5rem;
     font-size: 1.8rem;
-    color: rgb(0, 0, 0);
+    font-weight: 750;
+}
+
+.nav .site-title a{
+    color: black;
+}
+
+.nav .site-title a:hover{
+    color: #24ab6b;
+    transition: 0.2s;
 }
 
 .nav .nav-bar{
@@ -39,6 +49,14 @@ li {
 .nav .nav-bar .nav-items{
     font-weight: 800;
     padding-top: 2.6rem;
+}
+
+.nav .nav-bar .nav-items a{
+    color: black;
+}
+
+.nav .nav-bar .nav-items a:hover{
+    color: grey;
 }
 
 .nav .toggle-collapse{
@@ -58,11 +76,10 @@ li {
 }
 
 .heading-left{
-    margin-top: 7.5rem;
+    margin-top: 4.5rem;
     margin-bottom: 3rem;
     font-size: 1.2rem;
 }
-
 
 .heading-left h4{
     line-height: 1.7rem;
@@ -71,8 +88,19 @@ li {
     margin-right: auto;
 }
 
-.heading-right{
-    margin-bottom: 3rem;
+.heading .heading-left a{
+    font-weight: 800;
+    border-bottom: solid 1px;
+    color: rgb(65, 65, 65);
+}
+
+.heading .heading-left a:hover{
+    color: #24ab6b;
+}
+
+.heading-right img{
+    height: 15vh;
+    width: 15vw;
 }
 
 
@@ -165,23 +193,26 @@ li {
 /****x*** Articles page grid layout styling ****x**/
 
 .footer{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-top: solid 1px;
-    background-color: #ebebe8;
-    bottom: 0;
-    left: 0;
+    text-align: center;
+    margin-top: 10rem;
 }
 
 .footer .copyright-policy{
-    padding: 1.7rem 3rem;
+    line-height: 2rem;
+    margin-top: 1.2rem;
 }
 
-.footer .socials{
-    padding: 0 3rem;
+.footer .socials ul{
+    position: relative;
 }
 
+.footer .socials a{
+    color: black;
+}
+
+.footer .socials a:hover{
+    color: grey;
+}
 
 /*----------- Media queries -----------*/
 
@@ -193,7 +224,7 @@ li {
     .nav .toggle-collapse{
         display: initial;
     }
-
+}
 
 
 @media screen and (max-width:900px) {
