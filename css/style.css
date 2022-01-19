@@ -48,7 +48,9 @@ li {
 
 .nav .nav-bar .nav-items{
     font-weight: 800;
-    padding-top: 2.6rem;
+    padding-top: 2.7rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
 }
 
 .nav .nav-bar .nav-items a{
@@ -58,6 +60,25 @@ li {
 .nav .nav-bar .nav-items a:hover{
     color: grey;
 }
+
+/*----------------- Drop down menu--------------------*/
+
+.nav .nav-bar .nav-items ul ul li{
+    float: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2rem;
+    margin-top: 1.2rem;
+    display:none;
+}
+
+
+.nav .nav-bar .nav-items ul li:hover > ul li{
+    display: grid;
+}
+
+
+/*----------x------- Drop down menu--------------x------*/
 
 .nav .toggle-collapse{
     display: none;
@@ -73,6 +94,7 @@ li {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     text-align: center;
+    z-index: 1;
 }
 
 .heading-left{
@@ -96,6 +118,10 @@ li {
 
 .heading .heading-left a:hover{
     color: #24ab6b;
+}
+
+.heading-right{
+    margin-top: 2rem;
 }
 
 .heading-right img{
