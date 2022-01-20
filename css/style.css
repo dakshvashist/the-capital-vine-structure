@@ -209,21 +209,64 @@ li {
 
 /* ----------x---- All blogs webpage layout --------x------ */
 
+/* --------------- Home page recent articles section --------------- */
+
 .recent-articles{
-    text-align: center;
-    padding: 2rem 0;
-    padding-bottom: 1rem;
-    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
 }
 
-.recent-articles .top-3-articles{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+.top-3-articles{
+    position: relative;
+    height: 30rem;
+    max-width: 1000px;
+    margin: 1rem auto; 
 }
+
+.top-3-articles .box{
+
+    margin: 1rem 1.3rem;
+    padding: 1rem;
+    text-align: left;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-columns: 16rem;
+    grid-template-rows: 9rem 4rem 13rem;
+    float: left;
+    border: solid 1px black;
+    box-shadow: 4px 4px 8px 0 #24ab6b;
+}
+
+
+
+.top-3-articles .box:hover{
+    cursor: pointer;
+    position: relative;
+    top: -2px;
+    box-shadow: 4px 8px 12px 0 #24ab6b/*rgba(0,0,0,0.2)*/;
+}
+
+.view-all-button{
+    max-width: 1000px;
+    height: auto;
+    margin: 1rem auto;
+    position: relative;
+    top: 1.2rem;
+    padding-right: 1rem;
+    text-align: right;
+    font-size: 1.3rem;
+}
+
+.view-all-button a:hover{
+    text-decoration: underline;
+}
+
+/* -------x-------- Home page recent articles section --------x------- */
 
 /*Articles page grid layout styling*/
 
-.articles-page{
+/* .articles-page{
     width: 90%;
     max-width: 1240px;
     margin: 5% auto;
@@ -293,7 +336,7 @@ li {
     margin-bottom: 30px;
     color: rgb(99, 28, 75);
     word-wrap:break-word;
-}
+} */
 
 /****x*** Articles page grid layout styling ****x**/
 
@@ -301,9 +344,8 @@ li {
 
 .footer{
     text-align: center;
-    margin-top: 10rem;
     position: relative;
-    bottom: 1rem;
+    bottom: -2rem;
 }
 
 .footer .copyright-policy{
@@ -349,6 +391,20 @@ li {
 
     .heading-right{
         display: none;
+    }
+}
+
+@media all and (max-width:1000px){
+    .top-3-articles{
+        height: 100%;
+        max-width: 23rem;
+    }
+    
+    
+    .top-3-articles .box{
+        float: none;
+        grid-template-columns: auto;
+        
     }
 }
 
