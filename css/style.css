@@ -238,8 +238,6 @@ li {
     box-shadow: 4px 4px 8px 0 #24ab6b;
 }
 
-
-
 .top-3-articles .box:hover{
     cursor: pointer;
     position: relative;
@@ -339,6 +337,49 @@ li {
 } */
 
 /****x*** Articles page grid layout styling ****x**/
+
+/* ----------- Blog webpage layout ----------- */
+
+.blog-title-box{
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    border-bottom: solid 1px black;
+}
+
+.blog-title-box .blog-title{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.blog-title-box .author-name{
+    color: grey;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.blog-title-box .author-name a{
+    color: rgb(136, 136, 136);
+}
+
+.blog-title-box .author-name a:hover{
+    color: black;
+}
+
+.blog-text{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.blog-text p{
+    line-height: 4rem;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+}
+
+/* ---x-------- Blog webpage layout --------x--- */
 
 /* -------------------Footer------------------- */
 
