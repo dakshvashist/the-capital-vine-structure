@@ -291,6 +291,24 @@ header{
 
 /* -------x-------- Home page recent articles section --------x------- */
 
+/* ---------- About section of the website ---------- */
+
+.about-section{
+    max-width: 1000px;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.about-section p{
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+
+/* ---------- About section of the website ---------- */
+
 /*Articles page grid layout styling*/
 
 /* .articles-page{
