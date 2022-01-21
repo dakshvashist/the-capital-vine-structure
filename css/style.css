@@ -4,7 +4,7 @@
 }
 
 html{
-    background-color: #f3f3f3;
+    background-color: #fcfcfc;
     font-family: 'Lato', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Raleway', sans-serif;
@@ -21,6 +21,16 @@ li {
     list-style-type: none;
 }
 
+/* --------------- Blog template background --------------- */
+
+header{
+    width: 100%;
+    background-color: #b3a706;
+    border-bottom: solid 1px black;
+}
+
+
+/* -------x-------- Blog template background -------x-------- */
 
 /* ------------------ Navigation bar ------------------- */
 
@@ -167,7 +177,22 @@ li {
 
 .all-blogs .blog{
     padding: 0 1.5rem;
+    margin-top: 2rem;
     margin-bottom: 5rem;
+}
+
+.all-blogs .blog .tags{
+    position: relative;
+    height: 5rem;
+}
+
+.all-blogs .blog .tags ul li{
+    float: left;
+    margin: 1rem 0.2rem;
+    padding: 0.1rem 0.5rem;
+    max-width: fit-content;
+    border: solid 1px black;
+    border-radius: 1rem;    
 }
 
 .all-blogs .blog article{
@@ -187,7 +212,11 @@ li {
 
 .all-blogs .blog h1{
     font-size: 2.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+}
+
+.all-blogs .blog h2{
+    margin-bottom: 2rem;
 }
 
 .all-blogs .blog h3{
@@ -235,7 +264,7 @@ li {
     grid-template-rows: 9rem 4rem 13rem;
     float: left;
     border: solid 1px black;
-    box-shadow: 4px 4px 8px 0 #24ab6b;
+    box-shadow: 4px 4px 8px 0 #4b4b4b;
 }
 
 .top-3-articles .box:hover{
@@ -346,26 +375,26 @@ li {
     margin-top: 4rem;
     text-align: center;
     margin-bottom: 3rem;
-    border-bottom: solid 1px black;
 }
 
 .blog-title-box .blog-title{
     margin-bottom: 2rem;
     font-size: 2rem;
+    color: white;
 }
 
 .blog-title-box .author-name{
-    color: grey;
+    color: rgb(31, 31, 31);
     padding-bottom: 1rem;
     font-size: 1rem;
 }
 
 .blog-title-box .author-name a{
-    color: rgb(136, 136, 136);
+    color: rgba(255, 255, 255, 0.795);
 }
 
 .blog-title-box .author-name a:hover{
-    color: black;
+    color: white;
 }
 
 .blog-text{
@@ -386,12 +415,14 @@ li {
 .footer{
     text-align: center;
     position: relative;
-    bottom: -2rem;
+    bottom: -1rem;
+    padding: 1.2rem;
+    background-color: #24ab6b;
 }
 
 .footer .copyright-policy{
     line-height: 2rem;
-    margin-top: 1.2rem;
+    margin-top: 1rem;
 }
 
 .footer .socials ul{
@@ -403,7 +434,7 @@ li {
 }
 
 .footer .socials a:hover{
-    color: grey;
+    color: white;
 }
 
 /* ------------x-------Footer------------x------- */
@@ -432,6 +463,28 @@ li {
 
     .heading-right{
         display: none;
+    }
+}
+
+@media all and (max-width: 950px) {
+
+    .blog-title-box .blog-title{
+        font-size: 1.6rem;
+    }
+
+    .blog-title-box .author-name{
+        font-size: 0.9rem;
+    }
+
+    .blog-text{
+        margin: 0 auto;
+        padding-left: 1.8rem;
+        padding-right: 1.8rem;
+
+    }
+
+    .blog-text p{
+        font-size: 1.5rem;
     }
 }
 
