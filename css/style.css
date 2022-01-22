@@ -179,6 +179,7 @@ header{
     padding: 0 1.5rem;
     margin-top: 2rem;
     margin-bottom: 5rem;
+    border-bottom: 1px solid rgba(49, 49, 49, 0.199);
 }
 
 .all-blogs .blog .tags{
@@ -212,7 +213,6 @@ header{
 
 .all-blogs .blog h1{
     font-size: 2.5rem;
-    margin-bottom: 1rem;
 }
 
 .all-blogs .blog h2{
@@ -430,21 +430,54 @@ header{
 /* ----------- Email sub box ----------- */
 
 .email-sub-box{
-    max-width: 600px;
+    max-width:650px;
     margin: 3rem auto;
     text-align: center;
-    border: solid 1px rgba(173, 173, 173, 0.61);
-    height: 8rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
+.email-sub-box .email-sub-box-border{
+    padding: 1.8rem 3rem;
+    margin: auto 1.5rem;
+    border: solid 1px rgba(173, 173, 173, 0.404);
+}
+
 .email-sub-box p{
-    margin: 1.5rem auto;
+    margin: 1.2rem auto;
     font-size: 1.2rem;
 }
 
+.email-sub-box .email-sub-box-border .input-email{
+    padding: 0 1rem;
+}
 
+.email-sub-box .email-sub-box-border .input{
+    height: 37px;
+    width: 250px;
+    margin: 0.5rem 0;
+    border: 1px solid rgba(233, 233, 233, 0.733);
+    padding: 0.1rem 0.3rem;
+}
+
+.email-sub-box .email-sub-box-border .btn{
+    border: none;
+    height: 42.3px;
+    width: 70px;
+    padding: 0.1rem 0.3rem;
+    margin-top: 0.5rem;
+    background: rgb(233, 233, 233);
+    border: 1px solid rgb(233, 233, 233);
+    position: relative;
+    right: 0.25rem;
+    cursor: pointer;
+    color: black;
+}
+
+.email-sub-box .email-sub-box-border .btn:hover{
+    background: rgb(182, 182, 182);
+    color: white;
+}
 
 
 /* -------x---- Email sub box ------x----- */
