@@ -6,12 +6,12 @@ https://coolors.co/palette/d8f3dc-b7e4c7-95d5b2-74c69d-52b788-40916c-2d6a4f-1b43
 
 Variables
 
-<!-- Home page -->
+// Home page
 
-<!-- About page -->
+// About page
 
-<!-- All blogs page -->
+// All blogs page
 
-<!-- Blog layout -->
+// Blog layout
 
-<!-- Miscellaneous -->
+// Miscellaneous
