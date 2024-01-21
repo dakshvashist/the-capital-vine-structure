@@ -1,0 +1,25 @@
+{
+  "name": "the-capital-vine-structure",
+  "version": "1.0.0",
+  "description": "Here, I will mention the structure of the website and its limitations to help the developer maneuver through the codebase efficiently.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dakshvashist/the-capital-vine-structure.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dakshvashist/the-capital-vine-structure/issues"
+  },
+  "homepage": "https://github.com/dakshvashist/the-capital-vine-structure#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.4",
+    "pug": "^3.0.2"
+  }
+}
